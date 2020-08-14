@@ -1,0 +1,21 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "node js crash course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "JaiPrakash"
+  ],
+  "author": "JaiPrakash",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
