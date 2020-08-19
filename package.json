@@ -13,6 +13,8 @@
   "author": "JaiPrakash",
   "license": "ISC",
   "dependencies": {
+    "g": "^2.0.1",
+    "host": "0.0.1",
     "uuid": "^8.3.0"
   },
   "devDependencies": {

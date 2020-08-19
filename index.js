@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
 
     //  build file paths
     let filePath = path.join(__dirname, 'public', req.url === '/'? 'index.html': req.url)
-
+    console.log(">> ", filePath)
     // etensions of the file
     let extname  =  path.extname(filePath)
     let contentType = 'text/html';
@@ -40,7 +40,8 @@ const server = http.createServer((req, res) => {
             contentType = 'text/html'
             break
         case '.css':
-            contentType = 'css'
+            contentType = 'text/css'
+            filePath = path.join(__dirname, '', req.url)
             break
         case '.png':
             contentType = 'png'
