@@ -2,3 +2,4 @@ node_modules
 reference
 person.js
 package-lock.json
+logger.js
