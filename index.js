@@ -53,7 +53,7 @@ const server = http.createServer((req, res) => {
             if(err.code == "ENOENT"){
                 // file not found
                 fs.readFile(path.join(__dirname, "public", "404.html"), (err, content) => {
-                    res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
+                    // res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
                     res.writeHead(200, {'Content-Type': "text/html"})
                     res.end(content, 'utf8')
                 })
@@ -64,7 +64,7 @@ const server = http.createServer((req, res) => {
             }
         } else{
             // Success
-            res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
+            // res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
             res.writeHead(200, {'Content-Type': contentType})
             res.end(content, 'utf8')
         }
